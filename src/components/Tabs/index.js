@@ -9,6 +9,7 @@ import {
 } from 'react-native-elements';
 import HomeTab from './HomeTab';
 import DefaultTab from './DefaultTab';
+import SubTab from './SubTab';
 
 class AppTabs extends Component {
   constructor(props, context) {
@@ -56,7 +57,7 @@ class AppTabs extends Component {
                         name='list'
                         size={30} />}
                     onPress={() => this.changeTab('browse')}>
-                    <DefaultTab text={'browse'} />
+                    <SubTab/>
                 </Tab>
                 <Tab
                     titleStyle={styles.tabTitle}
